@@ -8,3 +8,14 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# 忽略所有编译生成的 class 文件
+*.class
+
+# 忽略 IDEA 的默认输出目录
+out/
+target/
+
+# 忽略 IDEA 的本地配置文件（顺手加上的好习惯）
+.idea/
+*.iml
