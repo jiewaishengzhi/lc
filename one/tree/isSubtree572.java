@@ -9,8 +9,8 @@ public class isSubtree572 {
 
         //检查 当前节点开始是否匹配
         return isSame(root,subRoot)
-                ||isSame(root.left,subRoot)
-                ||isSame(root.right,subRoot);
+                ||isSubtree(root.left,subRoot)
+                ||isSubtree(root.right,subRoot);
 
     }
     //判断两棵树是否完全相同

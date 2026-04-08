@@ -45,7 +45,7 @@ public class isSameTree100 {
             TreeNode node2= queue.poll();
 
             if(node1==null&&node2==null){
-                return true;
+               continue;
             }
             if (node1 == null || node2 == null) {
                 return false;
