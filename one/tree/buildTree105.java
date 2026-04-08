@@ -39,5 +39,6 @@ public class buildTree105 {
         root.right = build(preorder, inRootIdx + 1, inRight);
 
         return root;
+
     }
 }
