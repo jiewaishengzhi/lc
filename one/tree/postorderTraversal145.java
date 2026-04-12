@@ -1,8 +1,6 @@
 package one.tree;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class postorderTraversal145 {
     //---- 递归 ----
@@ -27,8 +25,8 @@ public class postorderTraversal145 {
         if(root==null)return result;
 
         //第一个栈负责遍历  第二个栈负责反转顺序
-        Stack<TreeNode> stack1=new Stack<>();
-        Stack<TreeNode> stack2=new Stack<>();
+        Deque<TreeNode> stack1=new ArrayDeque<>();
+        Deque<TreeNode> stack2=new ArrayDeque<>();
 
         stack1.push(root);
         while(!stack1.isEmpty()){
