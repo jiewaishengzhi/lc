@@ -9,11 +9,11 @@ public class preorderTraversal144 {
     //----- 递归 -----
     public List<Integer> result=new ArrayList<>();
 
-    public List<Integer> preorderTraversal(TreeNode root){
+    public List<Integer> preorderTraversal(one.tree.TreeNode root){
         dfs(root);
         return result;
     }
-    private void dfs(TreeNode node){
+    private void dfs(one.tree.TreeNode node){
         if(node==null) return;
         result.add(node.val);  //根
         dfs(node.left);  //左
@@ -21,10 +21,10 @@ public class preorderTraversal144 {
     }
 
     //----- 迭代 -----  根左右
-    public List<Integer> preorderTraversal2(TreeNode root){
+    public List<Integer> preorderTraversal2(one.tree.TreeNode root){
         List<Integer> result=new ArrayList<>();
         if(root==null) return result;
-        Deque<TreeNode> stack=new ArrayDeque<>();
+        Deque<one.tree.TreeNode> stack=new ArrayDeque<>();
         stack.push(root);
 
         while(!stack.isEmpty()){

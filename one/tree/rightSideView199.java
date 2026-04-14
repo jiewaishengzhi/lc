@@ -55,6 +55,5 @@ public class rightSideView199 {
         }
         dfs(node.right,depth+1,result);
         dfs(node.left,depth+1,result);
-        
     }
 }
