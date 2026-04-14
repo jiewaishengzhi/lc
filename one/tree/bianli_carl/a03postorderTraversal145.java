@@ -38,6 +38,7 @@ public class a03postorderTraversal145 {
         while(!stack1.isEmpty()){
             TreeNode node=stack1.pop();
             stack2.push(node);
+            //出栈要求右左   ->入栈顺序 左右
             if(node.left!=null)stack1.push(node);
             if(node.right!=null){
                 stack1.push(node.right);
