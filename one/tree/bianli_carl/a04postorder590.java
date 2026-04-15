@@ -1,10 +1,8 @@
 package one.tree.bianli_carl;
 
-import one.tree.postorder590;
-
 import java.util.*;
 
-public class a04postorder {
+public class a04postorder590 {
     class Node{
         public int val;
         public List<Node> children;
