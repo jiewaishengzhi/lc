@@ -1,6 +1,8 @@
 package one.tree.bianli_carl;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 public class a02preorder589 {
@@ -35,5 +37,20 @@ public class a02preorder589 {
     }
 
     // ---- bfs迭代 ----
+    public List<Integer> preorder2(Node root){
+        List<Integer> res=new ArrayList<>();
+        if(root==null) return null;
+        Deque<Node> stack=new ArrayDeque<>();
+        stack.push(root);
+        while(!stack.isEmpty()){
+            Node node=stack.pop();
+            res.add(node.val);
+            //从右往左入栈 保证左边孩子先被弹出
+            for(int i=node.children.size()-1;i>=0;i--){
+                stack.push(node.children.get(i));
+            }
+        }
+        return res;
+    }
 
 }
