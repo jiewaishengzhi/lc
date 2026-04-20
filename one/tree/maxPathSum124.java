@@ -6,7 +6,7 @@ package one.tree;
   路径：从树中任意节点出发，沿父节点-子节点连接，到达任意节点的序列。路径至
   少包含一个节点，且不需要经过根节点。
  */
-public class maxSum124 {
+public class maxPathSum124 {
     private int maxSum=Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root){
