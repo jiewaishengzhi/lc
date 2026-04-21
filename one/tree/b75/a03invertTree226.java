@@ -3,8 +3,9 @@ package one.tree.b75;
 import java.util.LinkedList;
 import java.util.Queue;
 
-//给你一棵二叉树的根节点 root ，翻转这棵二叉树，并返回其根节点。
+//给你一棵二叉树的根节点 root ，翻转这棵二叉树(左右孩子互换)，并返回其根节点。
 public class a03invertTree226 {
+    //递归互换左右孩子
     public TreeNode invertTree(TreeNode root){
         if(root==null) return null;
         TreeNode temp=root.left;
@@ -17,7 +18,7 @@ public class a03invertTree226 {
         return root;
     }
 
-    //迭代
+    //按层迭代 互换左右孩子
     public TreeNode invertTree2(TreeNode root){
         if(root==null)return null;
         Queue<TreeNode> queue=new LinkedList<>();

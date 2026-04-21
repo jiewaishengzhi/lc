@@ -8,7 +8,7 @@ import java.util.Queue;
 //给定一个二叉树 root ，返回其最大深度。
 //二叉树的 最大深度 是指从根节点到最远叶子节点的最长路径上的节点数。
 public class a01maxDepth104 {
-    //dfs递归
+    //dfs递归  层序遍历
     public int maxDepth(TreeNode root){
         List<Integer> res=new ArrayList<>();
         res.add(0);
@@ -25,12 +25,13 @@ public class a01maxDepth104 {
         dfs(node.right,depth+1,res);
     }
 
-    //递归
+    //直接递归
     public int maxDepth2(TreeNode root) {
         if (root == null) return 0;
         return Math.max(maxDepth2(root.left), maxDepth2(root.right)) + 1;
     }
 
+    //迭代 层序遍历求深度
     public int maxDepth3(TreeNode root){
         if(root==null)return 0;
         Queue<TreeNode> queue=new LinkedList<>();

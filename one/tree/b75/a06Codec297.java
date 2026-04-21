@@ -57,6 +57,7 @@ public class a06Codec297 {
         //根
         String val=queue.poll();
 
+        //递归出口
         if(val.equals(NULL))return null;
 
         TreeNode node=new TreeNode(Integer.parseInt(val));

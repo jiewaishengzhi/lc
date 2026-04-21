@@ -20,6 +20,7 @@ public class a08buildTree105 {
         for(int i=0;i< inorder.length;i++){
             inorderIndexMap.put(inorder[i],i);
         }
+        preIndex=0;
 
         return build(preorder,0,inorder.length-1);
 

@@ -21,6 +21,7 @@ public class a05levelOrder102 {
         }
         //把当前节点放到对应层
         res.get(depth).add(node.val);
+
         dfs(node.left,depth+1,res);
         dfs(node.right,depth+1,res);
     }

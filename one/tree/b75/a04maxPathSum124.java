@@ -6,7 +6,7 @@ package one.tree.b75;
 给你一个二叉树的根节点 root ，返回其 最大路径和 。
  */
 public class a04maxPathSum124 {
-    //全局遍历 记录整棵树中的最大路径和
+    //全局变量 记录整棵树中的最大路径和
     private int maxSum=Integer.MIN_VALUE;
 
     public int maxPathSum(TreeNode root){

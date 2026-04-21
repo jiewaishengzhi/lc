@@ -6,6 +6,7 @@ package one.tree.b75;
  */
 public class a02isSameTree100 {
     public boolean isSameTree(TreeNode p,TreeNode q){
+        //都为空 相同
         if(p==null&&q==null)return true;
         //其中一个为空 不相同
         if(p==null||q==null)return false;
