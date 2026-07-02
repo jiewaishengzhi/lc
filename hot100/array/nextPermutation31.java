@@ -32,7 +32,7 @@ public class nextPermutation31 {
         int n=nums.length;
         
         //1.从右向左找到第一个下降点i
-        int i=n-1;
+        int i=n-2;
         while(i>=0&&nums[i]>=nums[i+1]){
             i--;
         }
