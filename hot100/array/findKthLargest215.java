@@ -92,7 +92,18 @@ public class findKthLargest215 {
         return i;
     }
 
-    //划分函数 双指针优化
+    private int quickSelect2(int[] nums, int left, int right, int targetIndex) {
+        if (left == right) return nums[left];
+
+        int pivotIndex = partition2(nums, left, right);
+
+        if (targetIndex <= pivotIndex) {
+            return quickSelect2(nums, left, pivotIndex, targetIndex);
+        } else {
+            return quickSelect2(nums, pivotIndex + 1, right, targetIndex);
+        }
+    }
+    //划分函数 双指针优化  返回的是分界点 不是最终位置
     private int partition2(int[] nums,int left,int right){
         int randomIndex=left+random.nextInt(right-left+1);
         int pivot=nums[randomIndex];

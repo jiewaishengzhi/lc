@@ -1,15 +1,12 @@
-package linklist;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class reorderList143 {
-    public void reorderList(ListNode head){
+    public void reorderList(linklist.ListNode head){
         if(head==null)return;
 
         //1.把所有节点放入ArrayList
         List<ListNode> list=new ArrayList<>();
-        ListNode curr=head;
+        linklist.ListNode curr=head;
         while(curr!=null){
             list.add(curr);
             curr=curr.next;
