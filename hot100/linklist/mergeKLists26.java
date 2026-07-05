@@ -41,7 +41,7 @@ public class mergeKLists26 {
         if(l==r)return lists[l];
         if(l>r)return null;
         int mid=l+(r-l)/2;
-        ListNode left=merge(lists,1,mid);
+        ListNode left=merge(lists,l,mid);
         ListNode right=merge(lists,mid+1,r);
         return mergeTwoLists(left,right);
     }
