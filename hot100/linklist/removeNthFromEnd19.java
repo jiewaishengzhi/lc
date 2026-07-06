@@ -15,6 +15,22 @@ package hot100.linklist;
  */
 public class removeNthFromEnd19 {
     public ListNode removeNthFromEnd(ListNode head, int n){
+        ListNode dummy=new ListNode(0,head);
+        ListNode fast=dummy;
+        ListNode slow=dummy;
+
+        for(int i=0;i<=n;i++){//快指针移n+1位
+            fast=fast.next;
+        }
+
+        while(fast!=null){ //慢指针到倒数n-1处(倒数第n的前驱)
+            fast=fast.next;
+            slow=slow.next;
+        }
+
+        slow.next=slow.next.next;
+
+        return dummy.next;
 
     }
 }
