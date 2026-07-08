@@ -42,3 +42,5 @@ public class preorderTraversal144 {
         return res;
     }
 }
+
+//2026.7.8 一遍过

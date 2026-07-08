@@ -43,7 +43,7 @@ public class postorderTraversal145 {
                 stack1.push(node.left);
             }
             if(node.right!=null){
-                stack2.push(node.right);
+                stack1.push(node.right);
             }
         }
         while (!stack2.isEmpty()){
@@ -51,5 +51,6 @@ public class postorderTraversal145 {
         }
         return res;
     }
-
 }
+
+//2026.7.8 迭代小卡
