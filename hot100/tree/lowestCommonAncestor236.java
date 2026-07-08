@@ -37,5 +37,5 @@ public class lowestCommonAncestor236 {
 
         //否则 返回非空的那一侧结果
         return left!=null?left:right;
-    }
+    } 
 }
