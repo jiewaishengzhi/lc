@@ -28,6 +28,7 @@ public class lowestCommonAncestor236 {
 
         //在左子树中查找
         TreeNode left=lowestCommonAncestor(root.left,p,q);
+        //在右子树中查找
         TreeNode right=lowestCommonAncestor(root.right,p,q);
 
         //如果左右两边都找了非空节点 说明p q分布在两侧 root就是lca
@@ -37,5 +38,7 @@ public class lowestCommonAncestor236 {
 
         //否则 返回非空的那一侧结果
         return left!=null?left:right;
-    } 
+    }
 }
+
+//2026.7.10 有点忘了看了遍视频

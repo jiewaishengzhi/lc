@@ -41,7 +41,6 @@ public class maxPathSum124 {
         //向上返回单侧最大贡献(只能选一边 或者不选)
         return node.val+Math.max(leftGain,rightGain);
     }
-
-
-
 }
+
+//2026.7.10 有点卡 写的出来
