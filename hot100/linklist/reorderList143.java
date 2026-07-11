@@ -25,14 +25,19 @@ L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
 public class reorderList143 {
     public void reorderList(ListNode head){
         //空链表 只有一个节点 只有两个节点 都不需要重排
-        if(head==null||head.next==null||head.next.next==null);
+        if(head==null||head.next==null||head.next.next==null) return;
         //1.找到链表中点
         ListNode slow=head;
         ListNode fast=head;
         while(fast.next!=null&&fast.next.next!=null){
             slow=slow.next;
-            fast=fast.next;
+            fast=fast.next.next;
         }
+        /*
+        奇数停在正中间 slow.next为后半段 比前半段少一个
+        偶数停在中间两个的前一个  slow.next为后半段  和前半段数量相同
+         */
+
         ListNode second=slow.next;
         slow.next=null;
 
@@ -99,3 +104,12 @@ public class reorderList143 {
         list.get(left).next=null;
     }
 }
+
+/*
+2026.7.11 注意找中点
+fast=head时 条件判断为fast!=null&&fast.next!=null
+fast=head.next时 条件为fast.next!=null&&fast.next.next!=null
+
+用ArrayList装 双指针
+ */
+

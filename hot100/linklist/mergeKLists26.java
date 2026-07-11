@@ -68,3 +68,5 @@ public class mergeKLists26 {
         return dummy.next;
     }
 }
+//2026.7.11 最小堆方法还可以  分治卡了下
+

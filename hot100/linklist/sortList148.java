@@ -63,5 +63,5 @@ public class sortList148 {
 
         return dummy.next;
     }
-
 }
+//2026.7.11 略卡

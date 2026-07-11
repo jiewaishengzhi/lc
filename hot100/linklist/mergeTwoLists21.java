@@ -30,3 +30,5 @@ public class mergeTwoLists21 {
         return dummy.next;
     }
 }
+
+//2026.7.11 一遍过

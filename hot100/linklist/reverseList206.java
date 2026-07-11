@@ -16,3 +16,5 @@ public class reverseList206 {
         return prev;
     }
 }
+//2026.7.11 记得prev
+

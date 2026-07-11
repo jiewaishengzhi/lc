@@ -25,9 +25,9 @@ public class reverseKGroup25 {
 
         /*
         pre：当前要翻转这一组的前一个节点
-        end：当前要翻转这一组的最后一个节点
-        start：当前这一组的第一个节点
-        next：当前这一组后面的第一个节点
+        start：当前组的第一个节点
+        end：当前组的最后一个节点
+        next：下一组的第一个节点
          */
 
         //pre指向当前要反转的这一组的前一个节点
@@ -74,3 +74,5 @@ public class reverseKGroup25 {
         return prev;
     }
 }
+//2026.7.11 不会啊mad 记得一点思路，一点
+

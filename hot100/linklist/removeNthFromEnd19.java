@@ -34,3 +34,7 @@ public class removeNthFromEnd19 {
 
     }
 }
+/*2026.7.11
+1.哑节点
+2.快指针先走n+1   找到倒数第n+1个
+ */
