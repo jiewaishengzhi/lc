@@ -95,12 +95,12 @@ public class findKthLargest215 {
     private int quickSelect2(int[] nums, int left, int right, int targetIndex) {
         if (left == right) return nums[left];
 
-        int pivotIndex = partition2(nums, left, right);
+        int boundary = partition2(nums, left, right);
 
-        if (targetIndex <= pivotIndex) {
-            return quickSelect2(nums, left, pivotIndex, targetIndex);
+        if (targetIndex <= boundary) {
+            return quickSelect2(nums, left, boundary, targetIndex);
         } else {
-            return quickSelect2(nums, pivotIndex + 1, right, targetIndex);
+            return quickSelect2(nums, boundary + 1, right, targetIndex);
         }
     }
     //划分函数 双指针优化  返回的是分界点 不是最终位置
@@ -134,3 +134,4 @@ public class findKthLargest215 {
     }
 
 }
+// 2026.7.12 忘差不多了 又学一遍
