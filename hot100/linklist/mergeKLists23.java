@@ -1,9 +1,8 @@
 package hot100.linklist;
 
-import java.awt.*;
 import java.util.PriorityQueue;
 
-public class mergeKLists26 {
+public class mergeKLists23 {
     public ListNode mergeKLists(ListNode[] lists){
         if(lists==null||lists.length==0)return null;
 
@@ -69,4 +68,5 @@ public class mergeKLists26 {
     }
 }
 //2026.7.11 最小堆方法还可以  分治卡了下
+//2026.7.14 小顶堆过 分治再记下
 

@@ -65,3 +65,4 @@ public class sortList148 {
     }
 }
 //2026.7.11 略卡
+//2026.7.14 递归出口return head

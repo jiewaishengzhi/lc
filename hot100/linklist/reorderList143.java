@@ -113,3 +113,5 @@ fast=head.next时 条件为fast.next!=null&&fast.next.next!=null
 用ArrayList装 双指针
  */
 
+//2026.7.14过 注意ArrayList最后把末尾节点的next置空
+
