@@ -33,7 +33,7 @@ public class nextPermutation31 {
         
         //1.从右向左找到第一个下降点i
         int i=n-2;
-        while(i>=0&&nums[i]>=nums[i+1]){
+        while(i>=0&&nums[i]>=nums[i+1]){ //取等于是排除的
             i--;
         }
         //如果i>=0 说明存在更大的排列
@@ -72,3 +72,5 @@ public class nextPermutation31 {
 3.将i,j位置互换
 4.翻转i+1到末尾
  */
+
+//2026.7.15 过
