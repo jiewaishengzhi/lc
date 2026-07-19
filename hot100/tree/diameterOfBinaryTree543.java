@@ -1,6 +1,6 @@
 package hot100.tree;
 
-public class diameterOfBinaryTree243 {
+public class diameterOfBinaryTree543 {
     int diameter=0;
     public int diameterOfBinaryTree(TreeNode root){
         depth(root);
@@ -19,3 +19,4 @@ public class diameterOfBinaryTree243 {
         return Math.max(leftDepth,rightDpeth)+1;
     }
 }
+//2026.7.19 重新学
