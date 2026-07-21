@@ -19,4 +19,5 @@ public class diameterOfBinaryTree543 {
         return Math.max(leftDepth,rightDpeth)+1;
     }
 }
-//2026.7.19 重新学
+// 2026.7.19 重新学
+// 2026.7.21 注意边数，不是节点数 别的一遍过

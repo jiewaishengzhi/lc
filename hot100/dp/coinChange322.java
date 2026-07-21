@@ -27,3 +27,4 @@ public class coinChange322 {
         return dp[amount]==amount+1?-1:dp[amount];
     }
 }
+// 2026.7.21 初始化状态小忘 逻辑记得

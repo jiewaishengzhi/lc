@@ -37,3 +37,5 @@ public class permute46 {
         }
     }
 }
+
+//2026.7.21  忘记了 看完会了

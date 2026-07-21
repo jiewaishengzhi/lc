@@ -52,3 +52,4 @@ public class lengthOfLIS300 {
         return size;
     }
 }
+// 2026.7.21 dp版小忘  贪心+二分全忘

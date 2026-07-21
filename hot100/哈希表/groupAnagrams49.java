@@ -47,5 +47,5 @@ public class groupAnagrams49 {
         }
         return new ArrayList<>(map.values());
     }
-
 }
+//2026.7.21 构造key再记录一下  哈希表思想

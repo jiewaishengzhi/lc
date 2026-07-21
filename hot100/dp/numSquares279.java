@@ -22,3 +22,5 @@ public class numSquares279 {
         return dp[n];
     }
 }
+
+// 2026.7.21 类似322
