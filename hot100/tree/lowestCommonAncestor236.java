@@ -21,24 +21,26 @@ package hot100.tree;
  */
 public class lowestCommonAncestor236 {
     public TreeNode lowestCommonAncestor(TreeNode root,TreeNode p,TreeNode q){
-        //递归终止条件 如果当前节点为空 或者找到了 p 或 q
+        //1.递归终止条件 如果当前节点为空 或者找到了 p 或 q  返回当前节点
         if(root==null||root==p||root==q){
             return root;
         }
 
+        //2.递归在左右子树中查找
         //在左子树中查找
         TreeNode left=lowestCommonAncestor(root.left,p,q);
         //在右子树中查找
         TreeNode right=lowestCommonAncestor(root.right,p,q);
 
-        //如果左右两边都找了非空节点 说明p q分布在两侧 root就是lca
+        //3.如果左右两边都找了非空节点 说明p q分布在两侧 root就是lca
         if(left!=null&&right!=null){
             return root;
         }
 
-        //否则 返回非空的那一侧结果
+        //4.否则 返回非空的那一侧结果
         return left!=null?left:right;
     }
 }
 
 //2026.7.10 有点忘了看了遍视频
+//2026.7.23 又看了下灵神 记一下
