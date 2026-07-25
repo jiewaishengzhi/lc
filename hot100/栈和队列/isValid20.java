@@ -51,3 +51,4 @@ public class isValid20 {
         return stack.isEmpty();
     }
 }
+//2026.7.25 过一遍

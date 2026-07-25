@@ -15,7 +15,5 @@ public class isValidBST98 {
 
         return validate(node.left,low,node.val)&&validate(node.right,node.val,high);
     }
-
-
-
 }
+//2026.7.25 过一遍

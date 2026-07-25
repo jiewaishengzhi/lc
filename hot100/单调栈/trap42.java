@@ -62,3 +62,4 @@ public class trap42 {
         return water;
     }
 }
+//2026.7.25 过一遍
