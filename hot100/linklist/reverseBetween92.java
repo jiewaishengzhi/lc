@@ -29,3 +29,4 @@ public class reverseBetween92 {
     }
 }
 //2026.7.25 过一遍
+//2026.7.26 注意left-1 移动多少位

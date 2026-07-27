@@ -130,3 +130,5 @@ public class LRUCache {
 HashMap可以进行O(1)查找
 双向链表 维护节点使用顺序 靠近头部的最近使用
  */
+
+//2026.7.26 get和put先取node

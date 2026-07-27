@@ -46,3 +46,6 @@ public class addTwoNumbers2 {
 1.维护哑头
 2.创建carry变量
  */
+
+//2026.7.26 一遍过
+
