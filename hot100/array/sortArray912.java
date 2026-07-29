@@ -1,46 +1,55 @@
 package hot100.array;
 
 import java.util.Random;
+/*
+给你一个整数数组 nums，请你将该数组升序排列。
 
-public class quickSort {
-// ------------------------Lomuto partition单指针-------------------
-    private final Random random=new Random();
-    public void quickSort1(int[] nums){
-        if(nums==null||nums.length<=1)return;
-        _quickSort1(nums,0,nums.length-1);
+你必须在 不使用任何内置函数 的情况下解决问题，时间复杂度为 O(nlog(n))，并且空间复杂度尽可能小。
+ */
+public class sortArray912 {
 
+    public int[] sortArray(int[] nums) {
+        quickSort(nums,0,nums.length-1);
+        return nums;
     }
-    private void _quickSort1(int[] nums,int left,int right){
+
+    //------------------------Lomuto partition单指针-------------------
+
+    private void quickSort(int[] nums,int left,int right){
         if(left>=right)return;
-        int pivotIndex=partition1(nums,left,right);
-        // Lomuto 返回的是 pivot 最终位置，所以 pivotIndex 可以排除
-        _quickSort1(nums,left,pivotIndex-1);
-        _quickSort1(nums,pivotIndex+1,right);
-
+        int pivot=partition(nums,left,right);
+        quickSort(nums,left,pivot-1);
+        quickSort(nums,pivot+1,right);
     }
-    /*
+
+    /*寻找基准元素
     选 pivot
     把 pivot 放到最右边
     用 storeIndex 维护“小于 pivot 区域”的边界
     最后把 pivot 放回最终位置
     返回 pivot 最终下标
  */
-    private int partition1(int[] nums,int left,int right){
-        //随机选一个pivot 把它放到最右边
+    private int partition(int[] nums,int left,int right){
+        Random random=new Random();
         int randomIndex=left+random.nextInt(right-left+1);
         swap(nums,randomIndex,right);
 
         int pivot=nums[right];
-        int storeIndex=left; //storeIndex维护小于pivot的边界
-        for(int i=left;i<right;i++){
-            if(nums[i]<pivot){
-                swap(nums,storeIndex,i);
-                storeIndex++;
+        int i=left;  //i指向第一个大于pivot的位置
+        for(int j=left;j<right;j++){
+            if(nums[j]<pivot){
+                swap(nums,i,j);
+                i++;
             }
         }
-        //把pivot放到最终位置
-        swap(nums,storeIndex,right);
-        return storeIndex;
+        swap(nums,i,right);
+        return i;
+    }
+
+    private void swap(int[] nums,int i,int j){
+        int temp=nums[i];
+        nums[i]=nums[j];
+        nums[j]=temp;
     }
 
 //------------------------Hoare partition双指针-----------------
@@ -67,6 +76,7 @@ j 从右往左找 <= pivot 的数
 如果 i >= j，返回 j
  */
     private int partition2(int[] nums,int left,int right){
+        Random random=new Random();
         int randomIndex=left+random.nextInt(right-left+1);
         int pivot=nums[randomIndex]; //面试手撕可以先换到left
 
@@ -86,11 +96,6 @@ j 从右往左找 <= pivot 的数
             swap(nums,i,j);
         }
     }
-
-
-    private void swap(int[] nums,int i,int j){
-        int temp=nums[i];
-        nums[i]=nums[j];
-        nums[j]=temp;
-    }
 }
+
+//2026.7.29 过一下

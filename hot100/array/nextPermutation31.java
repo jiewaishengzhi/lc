@@ -74,3 +74,4 @@ public class nextPermutation31 {
  */
 
 //2026.7.15 过
+//2026.7.29  注意i>=0  i为-1的情况  13542  14235
