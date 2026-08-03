@@ -48,3 +48,4 @@ public class maxProfit123 {
         return sell2;
     }
 }
+//2026.8.3已忘 学一遍  记录四个值 第一、二次买入和卖出

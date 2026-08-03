@@ -1,7 +1,7 @@
 package hot100.tree;
 
 public class rob337 {
-    /*
+    /*  后续遍历
     定义递归函数返回 int[] dfs: res[0]:偷当前节点时的最大值  res[1]:不偷当前子树的最大值
     1.偷当前节点rob=node.val+left[1]+right[1]
     2.不偷当前节点notRob=max(left[0],left[1]) + max(right[0],right[1])
