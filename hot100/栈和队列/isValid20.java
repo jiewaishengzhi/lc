@@ -43,7 +43,7 @@ public class isValid20 {
             if(!pairs.containsKey(c)){ //左括号压栈
                 stack.push(c);
             }else{//右括号判断栈顶元素
-                if(stack.isEmpty()||stack.pop()!=pairs.get(c)){
+                if(stack.isEmpty()||stack.pop()!=pairs.get(c)){ //栈顶非空 且 匹配
                     return false;
                 }
             }
@@ -53,3 +53,4 @@ public class isValid20 {
 }
 //2026.7.25 过一遍
 //2026.7.29 过一遍 注意栈和哈希表的职责
+//2026.8.3 一遍过 右括号判断时忘了栈需要非空
