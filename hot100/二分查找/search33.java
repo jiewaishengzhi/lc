@@ -42,3 +42,5 @@ public class search33 {
         return -1;
     }
 }
+//2026.7.30 第一遍
+//2026.8.2 一遍过
