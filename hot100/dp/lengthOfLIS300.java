@@ -57,5 +57,5 @@ public class lengthOfLIS300 {
 1.维护一个tails数组 tails[k]表示当前找到的长度为k+1的递增子序列的最小末尾元素
 2.遍历nums中的num：num大于tails的所有元素 追加到末尾
 3.在tails中二分查找第一个大于等于num的位置 用num替换该位置的值
-
  */
+//2026.8.5 dp还可以 贪心+二分没写出来 还得记
