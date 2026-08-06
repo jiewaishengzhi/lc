@@ -40,3 +40,4 @@ public class removeNthFromEnd19 {
  */
 
 //2026.7.26  弄清楚移动位数
+//2026.8.6  改了下过了，注意移动位数

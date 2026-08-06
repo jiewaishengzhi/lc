@@ -115,3 +115,4 @@ fast=head.next时 条件为fast.next!=null&&fast.next.next!=null
 
 //2026.7.14过 注意ArrayList最后把末尾节点的next置空
 //2026.7.26 一遍过
+//2026.8.6 一遍过
