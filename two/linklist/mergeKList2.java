@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 public class mergeKList2 {
     //合并链表数组中的k个升序链表
     //1.优先队列
-    public ListNode mergeKLists(ListNode[] lists){
+    public linklist.ListNode mergeKLists(ListNode[] lists){
         if(lists==null||lists.length==0) return null;
 
         //1.定义小顶堆 PriorityQueue
