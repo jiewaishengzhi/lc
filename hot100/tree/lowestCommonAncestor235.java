@@ -1,4 +1,7 @@
 package hot100.tree;
+
+import javax.swing.plaf.basic.BasicSplitPaneUI;
+
 /*
 二叉搜索树的最近公共祖先
 1.p.val q.val 都小于当前curr.val 说明p q都在当前节点左子树
@@ -22,21 +25,22 @@ public class lowestCommonAncestor235 {
         }
         return null; //一定存在 不会走到这里
 
+    }
 
+    //递归
+    public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q){
+        if(root==null) return null;
 
-
-//        //递归
-//        if(root==null) return null;
-//
-//        if(p.val<root.val&&q.val<root.val){
-//            return lowestCommonAncestor(root.left,p,q);
-//        }else if(p.val>root.val&&q.val>root.val){
-//            return lowestCommonAncestor(root.right,p,q);
-//        }else{
-//            return root;
-//        }
+        if(p.val<root.val&&q.val< root.val){
+            return lowestCommonAncestor2(root.left,p,q);
+        }else if(p.val>root.val&&q.val>root.val){
+            return lowestCommonAncestor2(root.right,p,q);
+        }else{
+            return root;
+        }
     }
 }
 
 //2026.7.11 微卡
 //2026.7.23 递归过 迭代微卡
+//2026.8.7 可以过
