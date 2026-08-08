@@ -21,3 +21,4 @@ public class maxArea11 {
     }
 }
 //2026.8.4 第一次一遍过
+//2026.8.8 过 minH*(right-left)  第一次多 +1

@@ -32,3 +32,7 @@ public class searchInsert35 {
         return left;
     }
 }
+/*
+[left,right)  left<right  mid=right
+[left,right]  left<=right  mid=right-1
+ */

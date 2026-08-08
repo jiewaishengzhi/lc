@@ -28,3 +28,4 @@ public class countSubstrings647 {
     }
 }
 //2026.8.4 第一次写
+//2026.8.8 过 while循环里面 边界条件要写在前面

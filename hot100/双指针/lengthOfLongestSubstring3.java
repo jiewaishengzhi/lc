@@ -36,3 +36,4 @@ public class lengthOfLongestSubstring3 {
 //2026.7.25 过一遍
 //2026.7.26 过一遍 left新加入有重复移动  right往右遍历
 //2026.8.3 一遍过 maxLen更新位置第一次写错
+//2026.8.8 left更新位置为下一个，写成当前的了

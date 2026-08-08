@@ -33,3 +33,4 @@ public class longestPalindrome5 {
     }
 }
 //2026.8.4 第一次写
+//2026.8.8  循环是多加了一次的 返回长度为right-left-1  写成+1了  start=i-(len-1)/2 死记一下
