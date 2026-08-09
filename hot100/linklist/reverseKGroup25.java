@@ -83,3 +83,5 @@ public class reverseKGroup25 {
 然后记录当前组的start=prev.next  下一组的开头next=end.next
 下次一定会
  */
+
+//2026.8.9 过 注意连接 pre.next=reverse(start)  start要留着
