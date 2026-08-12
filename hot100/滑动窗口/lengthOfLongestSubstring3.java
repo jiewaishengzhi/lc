@@ -1,4 +1,4 @@
-package hot100.双指针;
+package hot100.滑动窗口;
 
 import java.util.HashMap;
 import java.util.Map;

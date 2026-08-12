@@ -1,9 +1,8 @@
-package hot100.array;
+package hot100.贪心;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.SplittableRandom;
 import java.util.StringTokenizer;
 
 public class canJump55 {
@@ -16,12 +15,7 @@ public class canJump55 {
             if(i>maxReach){
                 return false;
             }
-
             maxReach=Math.max(maxReach,i+nums[i]);
-        }
-
-        if(maxReach>=n-1){
-            return true;
         }
         return true;
     }

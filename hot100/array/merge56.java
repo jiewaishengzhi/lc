@@ -40,31 +40,32 @@ public class merge56 {
     }
 
     public static void main(String[] args) throws IOException {
-//        int[][] intervals={
-//                {1,3},
-//                {2,6},
-//                {8,10},
-//                {15,18}
-//        };
+        int[][] intervals={
+                {1,3},
+                {2,6},
+                {8,10},
+                {15,18}
+        };
         //把标准输入包装成一个“按行读取”的对象
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        int n=Integer.parseInt(br.readLine().trim());
-        int[][] intervals = new int[n][2];
-
-        for(int i=0;i<n;i++){
-            //StringTokenizer 默认以空格、制表符等空白符切分
-            StringTokenizer st=new StringTokenizer(br.readLine());
-            intervals[i][0]=Integer.parseInt(st.nextToken());
-            intervals[i][1]=Integer.parseInt(st.nextToken());
-        }
+//        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+//        int n=Integer.parseInt(br.readLine().trim());
+//        int[][] intervals = new int[n][2];
+//
+//        for(int i=0;i<n;i++){
+//            //StringTokenizer 默认以空格、制表符等空白符切分
+//            StringTokenizer st=new StringTokenizer(br.readLine());
+//            intervals[i][0]=Integer.parseInt(st.nextToken());
+//            intervals[i][1]=Integer.parseInt(st.nextToken());
+//        }
 
         int[][] res=merge(intervals);
-        StringBuilder sb=new StringBuilder();
-        for(int[] interval:res){
-            sb.append(interval[0]).append(" ")
-                    .append(interval[1]).append("\n");
+        System.out.print("[");
+        for(int i=0;i<res.length-1;i++){
+            System.out.print(Arrays.toString(res[i]));
+            System.out.print(",");
         }
-        System.out.println(sb);
+        System.out.print(Arrays.toString(res[res.length-1]));
+        System.out.print("]");
     }
 }
 //2026.8.10 快手java一面

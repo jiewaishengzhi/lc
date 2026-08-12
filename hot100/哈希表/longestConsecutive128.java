@@ -14,7 +14,7 @@ public class longestConsecutive128 {
 
         int maxLen=0;
 
-        for(int num:nums){
+        for(int num:set){
             //num-1不存在时 num才可能是某个连续序列的起点
             if(!set.contains(num-1)){
                 int currentNum=num;
@@ -41,3 +41,4 @@ public class longestConsecutive128 {
         System.out.println(longestConsecutive(nums3)); // 0
     }
 }
+//2026.8.11 第一次写 第二次遍历记得遍历set(去重后的)

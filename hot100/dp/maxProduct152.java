@@ -18,7 +18,7 @@ public class maxProduct152 {
             int mn=minF;
 
             maxF=Math.max(nums[i],Math.max(nums[i]*mx,nums[i]*mn));
-            minF=Math.min(nums[i],Math.min(nums[i]*mx,nums[i]+mn));
+            minF=Math.min(nums[i],Math.min(nums[i]*mx,nums[i]*mn));
 
             res=Math.max(res,maxF);
         }
