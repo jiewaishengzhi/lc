@@ -49,3 +49,4 @@ public class wordBreak139 {
         System.out.println(res);
     }
 }
+//2026.8.13 用集合放字典中的每个单词 dp[i]表示[0,i-1]是否可分 对于每个i 从0到i-1都分成两部分分别判断

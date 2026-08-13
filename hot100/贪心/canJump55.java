@@ -35,3 +35,4 @@ public class canJump55 {
         System.out.println(canJump(nums));
     }
 }
+//2026.8.13 需要先判断当前i位置是否可达

@@ -35,3 +35,4 @@ public class canJump45 {
         System.out.println(jump(nums3)); // 3
     }
 }
+//2026.8.13  记录每次能走的最大距离，走到就+1次 更新最大距离 判断是否到达终点
