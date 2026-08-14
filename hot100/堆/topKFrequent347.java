@@ -45,3 +45,5 @@ public class topKFrequent347 {
         System.out.println(Arrays.toString(topKFrequent(nums3, 2)));
     }
 }
+
+//2026.8.14 Integer.compare(a[1],b[1])

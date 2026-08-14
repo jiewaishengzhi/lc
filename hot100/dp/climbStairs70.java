@@ -23,3 +23,4 @@ public class climbStairs70 {
         System.out.println(climbStairs(n2));
     }
 }
+//2026.8.14 一遍过

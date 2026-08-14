@@ -4,6 +4,7 @@ import java.util.PriorityQueue;
 
 public class moveZeroes283 {
     public static void moverZeroes(int[] nums){
+        //左指针指向当前已经处理好的序列的尾部，右指针指向待处理序列的头部。
         int slow=0;
 
         for(int fast=0;fast<nums.length;fast++){
@@ -38,3 +39,4 @@ public class moveZeroes283 {
         System.out.println("]");
     }
 }
+//2026.8.14 左指针指向当前已经处理好的序列的尾部，右指针指向待处理序列的头部 遇到非0就和左指针位置数交换 左指针前移

@@ -42,3 +42,4 @@ public class longestConsecutive128 {
     }
 }
 //2026.8.11 第一次写 第二次遍历记得遍历set(去重后的)
+//2026.8.14 一遍过了 记得用set 找到最大的不连续的num 持续判断

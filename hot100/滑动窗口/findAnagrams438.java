@@ -8,6 +8,7 @@ public class findAnagrams438 {
     /*核心思路：固定长度滑动窗口
     在 s 上维护一个长度固定为 p.length() 的窗口。
     只要窗口中每个字母的出现次数与 p 相同，就记录窗口左边界。
+    使用长度为 26 的数组 count 统计 p 的字符频率  新进入窗口的字符：count[字符]--  移出窗口的字符：count[字符]++
     维护变量 valid：表示当前还有多少个字符没有匹配完成
      */
     public static List<Integer> findAnagrams(String s, String p){
@@ -64,3 +65,4 @@ public class findAnagrams438 {
         // []
     }
 }
+//2026.8.14 不过 还需要刷
