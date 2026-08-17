@@ -20,7 +20,7 @@ public class wordBreak139 {
 
         for(int i=1;i<=n;i++){
             for(int j=0;j<i;j++){
-                //切分为s[j,j-1]
+                //切分为s[j,j-1]   substring 左闭右开
                 if(dp[j]&&set.contains(s.substring(j,i))){
                     dp[i]=true;
                     break;
@@ -50,3 +50,4 @@ public class wordBreak139 {
     }
 }
 //2026.8.13 用集合放字典中的每个单词 dp[i]表示[0,i-1]是否可分 对于每个i 从0到i-1都分成两部分分别判断
+//2026.8.16 方法记得 注意边界 dp[i]表示到0到i-1
