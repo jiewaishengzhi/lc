@@ -70,3 +70,4 @@ public class merge56 {
 }
 //2026.8.10 快手java一面
 //2026.8.13 重刷
+//2026.8.17 记住：Comparator.comparingInt(a->a[0])  res.toArray(new int[res.size()][])

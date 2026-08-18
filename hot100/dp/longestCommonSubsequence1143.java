@@ -40,3 +40,4 @@ public class longestCommonSubsequence1143 {
         System.out.println(longestCommonSubsequence(text1,text2));
     }
 }
+//2026.8.17 二维dp[i][j] i表示0到i-1的
