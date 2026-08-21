@@ -11,7 +11,7 @@ public class numIslands200 {
     这样，同一座岛后续再被扫描到时，已经被标记过，不会重复计数。
     这里可以直接把访问过的 '1' 改成 '0'，相当于“淹掉”整座岛。
      */
-    public int numIslands(char[][] grid){
+    public static int numIslands(char[][] grid){
         if(grid==null||grid.length==0)return 0;
 
         int rows=grid.length;
@@ -30,7 +30,7 @@ public class numIslands200 {
         }
         return count;
     }
-    private void dfs(char[][] grid,int row,int col){
+    private static void dfs(char[][] grid,int row,int col){
         //越界 或者当前位置是海水 结束
         if(row<0||row>=grid.length
                 ||col<0 ||col>=grid[0].length
@@ -47,7 +47,23 @@ public class numIslands200 {
         dfs(grid,row,col-1);
         dfs(grid,row,col+1);
     }
+
+    public static void main(String[] args) {
+        char[][] grid1 = {
+                {'1','1','0','0','0'},
+                {'1','1','0','0','0'},
+                {'0','0','1','0','0'},
+                {'0','0','0','1','1'}
+        };
+        System.out.println(numIslands(grid1));
+    }
 }
+
+
+
+
+
+
 // 2026.7.21 忘记了 看完会了
 // 2026.7.30 忘记了 已看会  扫描每个格子，遇到一块尚未访问的陆地，就说明发现了一座新岛；随后把这座岛的所有陆地都标记为已访问。
 // 2026.8.2 一遍过
