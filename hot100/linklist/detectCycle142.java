@@ -29,3 +29,4 @@ public class detectCycle142 {
 }
 //2026.7.28  第二次要先判断再移动  或者直接while(slow!=p) 循环结束后slow==p
 //2026.8.6 过
+// 2026.8.21 过

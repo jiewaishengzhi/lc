@@ -66,3 +66,4 @@ public class trap42 {
 //2026.7.29 整体逻辑要记下：对每个位置i进行计算雨水：water+= Math.min(leftMax[i],rightMax[i])-height[i] dp方法注意初始化
 // 2026.8.3 一遍过
 //2026.8.8 过
+//2026.8.21 有点忘了两边都要记录最大值 提示这个后 过
